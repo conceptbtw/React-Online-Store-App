@@ -1,3 +1,17 @@
+import HeaderNavList from "./HeaderNavList";
+import HeaderNavItem from "./HeaderNavItem";
+
 export default function Header() {
-  return <header className=""></header>;
+  return (
+    <header className="w-full p-4 flex justify-center items-center">
+      <nav className="flex justify-center items-center">
+        <HeaderNavList>
+          <HeaderNavItem to="/" page="Home" />
+          <HeaderNavItem to="/men" page="Men" />
+          <HeaderNavItem to="/women" page="Women" />
+          <HeaderNavItem to="/kids" page="Kids" />
+        </HeaderNavList>
+      </nav>
+    </header>
+  );
 }
